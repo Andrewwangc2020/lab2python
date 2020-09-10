@@ -25,7 +25,10 @@ def getLetterGrade(grade: float):
   elif (grade < 60):
     return "F";
 
-g = float(input("Enter your CMPSC 131 grade: "));
-letter = getLetterGrade(g);
-print(f"Your letter grade for CMPSC 131 is {letter}.");
+def run():
+  g = float(input("Enter your CMPSC 131 grade: "));
+  letter = getLetterGrade(g);
+  print(f"Your letter grade for CMPSC 131 is {letter}.");
 
+if __name__ == "__main__":
+  run();
